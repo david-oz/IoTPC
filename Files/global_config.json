@@ -1,0 +1,320 @@
+{
+  "iotpc_abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "_days_till_expiration",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "withdraw_funds",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "msgHash",
+          "type": "bytes32"
+        },
+        {
+          "name": "sig_v",
+          "type": "uint8"
+        },
+        {
+          "name": "sig_r",
+          "type": "bytes32"
+        },
+        {
+          "name": "sig_s",
+          "type": "bytes32"
+        },
+        {
+          "name": "target_address",
+          "type": "address"
+        }
+      ],
+      "name": "verify_signature",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "pko",
+          "type": "address"
+        },
+        {
+          "name": "pko_hash",
+          "type": "bytes32"
+        },
+        {
+          "name": "proof",
+          "type": "bytes"
+        }
+      ],
+      "name": "validate_pko",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "name": "pko",
+          "type": "address"
+        }
+      ],
+      "name": "reveal",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "pko",
+          "type": "address"
+        },
+        {
+          "name": "pko_hash",
+          "type": "bytes32"
+        },
+        {
+          "name": "proof",
+          "type": "bytes"
+        },
+        {
+          "name": "s",
+          "type": "bytes32"
+        },
+        {
+          "name": "sig_v",
+          "type": "uint8"
+        },
+        {
+          "name": "sig_r",
+          "type": "bytes32"
+        },
+        {
+          "name": "sig_s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "commit",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "merkle_root",
+          "type": "bytes32"
+        },
+        {
+          "name": "file_hash",
+          "type": "bytes20"
+        },
+        {
+          "name": "days_till_expiration",
+          "type": "uint256"
+        },
+        {
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "name": "delta_to_reveal",
+          "type": "uint256"
+        },
+        {
+          "name": "n",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "pkd",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "pko",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "Committed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "pko",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "r",
+          "type": "bytes32"
+        }
+      ],
+      "name": "KeyRevealed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "msg",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "val",
+          "type": "uint256"
+        }
+      ],
+      "name": "Deposited",
+      "type": "event"
+    }
+  ],
+  "iotpc_factory_abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "merkle_root",
+          "type": "bytes32"
+        },
+        {
+          "name": "package_info_hash",
+          "type": "bytes20"
+        },
+        {
+          "name": "filehash",
+          "type": "bytes20"
+        },
+        {
+          "name": "days_till_expiration",
+          "type": "uint256"
+        },
+        {
+          "name": "delta_to_reveal",
+          "type": "uint256"
+        },
+        {
+          "name": "n",
+          "type": "uint256"
+        }
+      ],
+      "name": "createContract",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function",
+      "signature": "0xfa37668f"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "merkle_root",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "package_info_hash",
+          "type": "bytes20"
+        },
+        {
+          "indexed": true,
+          "name": "contract_creator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "contract_address",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "filehash",
+          "type": "bytes20"
+        },
+        {
+          "indexed": false,
+          "name": "days_till_expiration",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "n",
+          "type": "uint256"
+        }
+      ],
+      "name": "ContractPublished",
+      "type": "event",
+      "signature": "0xf2cfad84ff9511387a38fab331a7fd3a3ce094bdaa2fdb6860aa55fa6d10118c"
+    }
+  ],
+  "factory_contract_address": "0x9e687d0E2492C613290408ea64D9C779Ee97B7F5",
+  "web3_provider": "wss://rinkeby.infura.io/ws",
+  "chain_id": 4
+}

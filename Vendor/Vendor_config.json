@@ -1,0 +1,36 @@
+{
+  "vendor_address": "0x2ae919bd945220c9c3cb782a5d4245485cc7251e",
+  "vendor_passphrase": "penny1",
+  "days_till_expiration": 4,
+  "iot_addresses": [
+    "0x99e0b4eda9e11a7aa54ccb2a3cf7826eb4f268c5",
+    "0x1d8ca22913b1965E26b5d167f11cbb94ae0911e9",
+    "0x9a2a89eda898ffcca54fd14d3ca5360963af03ec",
+    "0x68f4074ff4478337d754b5c471aa80bd325b1c38"
+  ],
+  "web3_provider": "wss://ropsten.infura.io/ws",
+  "contract": "0x59a7636f0e76977826d7e1a6632241C7bFAb3B08",
+  "vendor_web_torrent_port": 8010,
+  "rest_server_port": 8080,
+  "enc_priv_key": {
+    "address": "2ae919bd945220c9c3cb782a5d4245485cc7251e",
+    "crypto": {
+      "cipher": "aes-128-ctr",
+      "ciphertext": "feb08beb0ef027ddc491018299a7bf15927aac009cfa3642cf448b79f0064448",
+      "cipherparams": {
+        "iv": "68937f707909f78600cf9f895fcd8866"
+      },
+      "kdf": "scrypt",
+      "kdfparams": {
+        "dklen": 32,
+        "n": 262144,
+        "p": 1,
+        "r": 8,
+        "salt": "075739e78b17ff34b999a5e20eb176cb0648703fd84f99057778a5b0c9da0e5e"
+      },
+      "mac": "4a054ef6b1f5116c55c5c363b39d294db09ca2e7a93d4225d395b044ac1ff928"
+    },
+    "id": "246909c2-ffa1-45a1-b22f-e49871ff190f",
+    "version": 3
+  }
+}

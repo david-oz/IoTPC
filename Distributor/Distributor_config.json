@@ -1,0 +1,31 @@
+{
+  "address": "0x976E4c4A490bBCbEcA579996Ee295cb7C7583Eb5",
+  "passphrase": "dist",
+  "permissioned_vendors": [
+    "0x2ae919bd945220c9c3cb782a5d4245485cc7251e"
+  ],
+  "web3_provider": "wss://rinkeby.infura.io/ws",
+  "contract": "0x26F17546B487d04117Af041e3C9c83c52e043527",
+  "flie_path": "../Files/DownloadedFiles/",
+  "enc_priv_key": {
+    "version": 3,
+    "id": "c0b2322e-068b-44f1-a0e6-b06986d7af3a",
+    "address": "976e4c4a490bbcbeca579996ee295cb7c7583eb5",
+    "crypto": {
+      "ciphertext": "856957a333ccf5fffe9af98accc9cee1506108580922aa38ae219af6f657d4f2",
+      "cipherparams": {
+        "iv": "8cd1cd0c0bd2fd660ed9c47c79ff9840"
+      },
+      "cipher": "aes-128-ctr",
+      "kdf": "scrypt",
+      "kdfparams": {
+        "dklen": 32,
+        "salt": "dbe0b78bd6763bf14c33c131f8094eb89d651ac83cc34b9866b080a4c00e287e",
+        "n": 8192,
+        "r": 8,
+        "p": 1
+      },
+      "mac": "1cd3eafaf84178ca19e7fcb1e97332d9e7e3ae9a8b24b6c3024a6558ffb813e7"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+const path = require('path')
+const Vendor = require(path.join(__dirname, 'Vendor'))
+const configFilePath = path.join(__dirname, './Vendor_config.json')
+const vendor = new Vendor(configFilePath)
+vendor.uploadFile(path.join(__dirname, '..', '/Files/Updates/Update1_1.txt'))

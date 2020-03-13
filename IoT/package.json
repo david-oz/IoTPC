@@ -1,0 +1,20 @@
+{
+  "name": "IoT",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "createConfig": "node createConfig.js"
+  },
+  "dependencies": {
+    "addr-to-ip-port": "latest",
+    "bittorrent-dht": "latest",
+    "cli-color": "^1.2.0",
+    "crypto": "^1.0.1",
+    "http": "latest",
+    "log": "^1.4.0",
+    "merkle-tree-solidity": "^1.0.8",
+    "web3": "^1.0.0-beta.30",
+    "yargs": "^12.0.1"
+  }
+}

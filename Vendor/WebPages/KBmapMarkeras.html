@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="JS/jquery-3.3.1.js"></script>
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="JS/KBmapmarkers.js"></script>
+    <script type="text/javascript" src="JS/KBmapmarkersCords.js"></script>
+    <script src="JS/mapMarkersJson.js"></script>
+    <link href="css/KBmapmarkers.css" rel="stylesheet">
+</head>
+<body>
+<script>
+
+
+
+    (function($) {
+
+        $(document).ready(function(){
+
+            var localJson=json;
+
+            createKBmap('IDofCreatedMap', 'images/dotted_Map.png'); // creates map
+
+            IDofCreatedMap.importJSON(localJson); // import json data into map
+
+            IDofCreatedMap.showAllMapMarkers(); // show all markers stored in map object
+
+        });
+
+    })(jQuery);
+</script>
+    <section class="KBmap" id="IDofCreatedMap"></section>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "address": "0x6f45A4e531Edfb6390b840137cD2AD3Bb7BEeAa2",
+  "passphrase": "dist",
+  "permissioned_vendors": [
+    "0x2ae919bd945220c9c3cb782a5d4245485cc7251e"
+  ],
+  "web3_provider": "wss://ropsten.infura.io/ws",
+  "contract": "",
+  "flie_path": "../Files/DownloadedFiles/",
+  "enc_priv_key": {
+    "version": 3,
+    "id": "5eabfb57-7c7d-41ee-9ca8-79fb59e5cbf8",
+    "address": "6f45a4e531edfb6390b840137cd2ad3bb7beeaa2",
+    "crypto": {
+      "ciphertext": "994d6b1739bc74d11be6263ef020a685d2e355b99c3bd59a7844ce0e75e30f4d",
+      "cipherparams": {
+        "iv": "40f474858ca18c5d0d4cbbf394ac6d3c"
+      },
+      "cipher": "aes-128-ctr",
+      "kdf": "scrypt",
+      "kdfparams": {
+        "dklen": 32,
+        "salt": "691c05137fa161fb7f0e7d87bd9f07945255be72a3605487e4819672845d04a2",
+        "n": 8192,
+        "r": 8,
+        "p": 1
+      },
+      "mac": "fd26e623e764bd683a07de912ceb81ed9eb56e2cb3a32a5c6d2aa0dd52727cfc"
+    }
+  }
+}
